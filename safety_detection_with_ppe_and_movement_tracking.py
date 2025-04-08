@@ -50,7 +50,7 @@ ppe_model = YOLO("best.pt")                 # Your downloaded Roboflow PPE model
 tracker = DeepSort(max_age=30)
 
 # Open webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cv2.namedWindow("Define Risky Zone")
 cv2.setMouseCallback("Define Risky Zone", draw_zone)
 
